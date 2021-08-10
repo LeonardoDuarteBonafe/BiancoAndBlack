@@ -1,0 +1,1368 @@
+@font-face{
+    src: url(Fonts/Goudy Old Style Bold.ttf);
+    font-family: goudyOldStyleBold;
+}
+
+@font-face{
+    src: url(Fonts/Amalfi Coast.ttf);
+    font-family: amalfiCoast;
+}
+
+@font-face{
+    src: url(Fonts/Roboto-Regular.ttf);
+    font-family: robotoRegular;
+}
+
+@font-face{
+    src: url(Fonts/Roboto-Bold.ttf);
+    font-family: robotoBold;
+}
+
+:root{
+    font-size: 14px;
+    --primary-color: #4C4C4C;
+    --secondary-color: #231F20;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.teste{
+    /background-color: aqua;
+}
+
+body{
+    width: 100%;
+    max-width: 1366px !important;
+    margin: 0 auto !important;
+    overflow-x: hidden;
+}
+
+header{
+    /position: fixed;
+    z-index: 100;
+    width: 100%;
+    max-width: 1366px;
+    height: 150px !important;
+}
+
+header nav .nav-list li a{
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+header nav .nav-list li a:hover{
+    opacity: 0.7;
+}
+
+header nav .logo{
+    width: 20%;
+    height: 100% !Important;
+    display: flex;
+    justify-content: center;
+    /background-color: beige;
+}
+
+header nav .logo img{
+    max-width: 200px !important;
+    padding: 15px 0;
+    /background-color: green;
+}
+
+header nav{
+    display: flex;
+    justify-content: center;
+    /padding: 0 50px 0 70px;
+    padding: 0;
+    align-items: center;
+    /background: #23232e;
+    height: 100%;
+    background: white;
+    background-image: url(Images/Navbar/fundo.png);
+    background-size: cover;
+    background-color: var(--secondary-color);
+}
+
+header nav .nav-list{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0 !important;
+    padding: 0 !important;
+    /background-color: aqua;
+    width: 40%;
+}
+
+header nav .social{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+}
+
+header nav .social img{
+    margin: 0 15px;
+    cursor: pointer;
+}
+
+header nav .nav-list li{
+    margin: 0 8px;
+}
+
+header nav .nav-list li a{
+    color: white;
+    font-size: 1.3rem;
+}
+
+header nav .mobile-menu{
+    display: none;
+    cursor: pointer;
+}
+
+header nav .mobile-menu div{
+    width: 32px;
+    height: 2px;
+    background: var(--primary-color);
+    margin: 8px;
+    transition: 0.3s;
+}
+
+.carousel-top{
+    height: 500px;
+}
+
+.carousel-top .carousel-inner{
+    height: 100%;
+}
+
+.carousel-top .carousel-inner .carousel-item{
+    height: 100%;
+    overflow: hidden;
+}
+
+.carousel-top .carousel-inner .carousel-item img{
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: 1s;
+}
+
+.carousel-top .carousel-inner .carousel-item.active img{
+    transform: scale(1.2);
+}
+
+.carousel-top .carousel-inner .carousel-item p{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 50px;
+    margin: 0 0px 30px 0 !important;
+    padding: 0 50px 0 0 !important;
+    width: 50%;
+    text-align: right;
+    color: white;
+    /background-color: blue;
+    font-size: 2.3rem;
+    opacity: 0;
+    transform: translateX(20px);
+    transition: 1s;
+    text-transform: uppercase;
+}
+
+.carousel-top .carousel-inner .carousel-item.active p{
+    transition: 1s;
+    opacity: 1;
+    transform: translateX(0px);
+}
+
+.carousel-top .carousel-indicators{
+    /background-color: purple;
+    margin: 0 !important;
+    margin-bottom: 30px !important;
+    width: 50%;
+    padding: 0 !important;
+    bottom: 0;
+    height: 50px;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.carousel-top .carousel-indicators li{
+    /background-color: yellow;
+    width: 25px;
+    height: 25px;
+    margin: 0 10px;
+    left: 10%;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.informacao{
+    width: 100%;
+    height: 150px;
+    margin: 0 !important;
+    padding: 0 !important;
+    text-align: center;
+    background-image: url(Images/Informacao/fundo.png);
+    background-size: cover;
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.informacao h2{
+    font-family: amalfiCoast;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-size: 6rem;
+}
+
+/*.title{
+/background-color: aquamarine;
+color: var(--primary-color);
+text-align: center;
+width: 100%;
+padding: 25px 0;
+margin: 0 !important;
+}*/
+
+.materiais{
+    width: 100% !important;
+    max-width: 1366px !important;
+    position: relative;
+}
+
+.materiais .background{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /background-color: rgba(0,0,255, 0.3);
+    z-index: -1;
+}
+
+.materiais .info{
+    padding-top: 50px !important;
+    text-align: center;
+    z-index: 1;
+}
+
+.materiais .info h1{
+    padding: 0 !important;
+    font-family: goudyOldStyleBold;
+    font-size: 4rem;
+}
+
+.materiais .info p{
+    padding: 20px 0 !important;
+    font-family: goudyOldStyleBold;
+    font-size: 1.5rem;
+}
+
+/*materiais*/
+.materiais .gallery-swiper {
+    width: 90%;
+    margin: 0 5% !important;
+    max-width: 1366px !important;
+    height: 480px;
+    /background-color: beige;
+    padding-top: 10px !important;
+}
+
+.materiais .gallery-swiper .swiper-slide 
+{
+    background-position: center;
+    background-size: cover;
+    width: 20% !important;
+    height: 250px !important;
+    /*-webkit-box-reflect: below 0px linear-gradient(transparent, transparent, #0002);*/
+    position: relative;
+    display: flex !important;
+    justify-content: center;
+    padding: 0 2.2% !important;
+    margin-top: 0px;
+    transition: 1s;
+}
+
+.materiais .gallery-swiper .swiper-slide img 
+{
+    /*display: block;*/
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+    cursor: pointer;
+    object-fit: cover;
+    object-position: center !important;
+}
+
+.materiais .gallery-swiper .swiper-slide p{
+    transition: 1s;
+    font-size: 1.5rem;
+    transform: translateY(85px);
+    height: 60px;
+    position: absolute;
+    color: black;
+    bottom: 0;
+    /background-color: red;
+    width: 70% !important;
+    text-align: center;
+    font-family: goudyOldStyleBold;
+    text-transform: uppercase;
+    transition: 1s;
+}
+
+/*.materiais .gallery-swiper .swiper-slide:hover p{
+opacity: 1;
+transform: translateY(-20px);
+}*/
+
+.materiais .gallery-swiper .swiper-slide-active{
+    transition: 1s;
+    padding: 0 0% !important;
+    height: 300px !important;
+    /margin-top: 70px !important;
+    /transform: translateY(70px);
+    animation: activeMove 0s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes activeMove {
+    0%   {top: 0px;}
+    100% {top: 50px;}
+}
+
+.materiais .gallery-swiper .swiper-slide-active p{
+    transition: 1s;
+    font-size: 2rem;
+    width: 100% !important;
+}
+
+.materiais .gallery-swiper .swiper-slide:hover img{
+    transform: scale(1.1);
+}
+
+.materiais .gallery-swiper .swiper-slide-prev
+{
+    /transition: 1s;
+    /margin-top: 35px !important;
+    /transform: translateY(0px);
+    padding: 0 3% 0 0 !important;
+}
+
+.materiais .gallery-swiper .swiper-slide-next
+{
+    /margin-top: 50px !important;
+    /transform: translateY(0px);
+    padding: 0 0% 0 3% !important;
+}
+
+.materiais .gallery-swiper .swiper-slide-prev,
+.materiais .gallery-swiper .swiper-slide-next{
+    transition: 1s;
+    height: 275px !important;
+    animation: prevNextMove 0s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes prevNextMove {
+    0%   {top: 0px;}
+    100% {top: 25px;}
+}
+
+.materiais .gallery-swiper .swiper-slide-next p,
+.materiais .gallery-swiper .swiper-slide-prev p{
+    font-size: 1.7rem;
+    width: 85% !important;
+    transition: 1s;
+}
+
+.carousel-bottom{
+    margin-bottom: 50px;
+}
+
+.carousel-bottom .item{
+    margin: 0 !important;
+    padding: 0 !important;
+    position: relative;
+    width: 100%;
+}
+
+.carousel-bottom .item img{
+    width: 100%;
+}
+
+.carousel-bottom .item p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: 0 !important;
+    transform: translate(-50%, -50%);
+    font-size: 10.5rem;
+    color: transparent;
+    font-family: goudyOldStyleBold;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: #fff;
+}
+
+.empresa{
+    padding: 0 0 50px 0;
+    display: flex;
+    position: relative;
+}
+
+.empresa .fundo{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.empresa div{
+    width: 45%;
+    /background-color: aquamarine;
+}
+
+.empresa .imagens{
+    margin-left: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /background-color: yellow;
+}
+
+.empresa .imagens div{
+    width: 100%;
+    max-width: 500px;
+}
+
+.empresa .imagens .grande{
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.empresa .imagens .grande img{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.empresa .imagens .pequenas{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.empresa .imagens .pequenas img{
+    width: 30%;
+    height: 130px;
+    object-fit: cover;
+    object-position: center;
+    cursor: pointer !important;
+    z-index: 1;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.empresa .info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 0 0.5% 0 3%;
+    z-index: 2;
+}
+
+.empresa .info h1{
+    font-size: 3.5rem;
+    font-family: goudyOldStyleBold;
+    margin-bottom: 40px;
+}
+
+.empresa .info p{
+    font-family: goudyOldStyleBold;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    text-align: justify;
+}
+
+.contato{
+    padding: 50px 0; !important;
+    margin: 0 !important;
+    width: 100%;
+    background-image: url(Images/Formulario/fundo.png);
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    background-color: var(--secondary-color);
+}
+
+.contato .info{
+    text-align: center;
+    color: white;
+}
+
+.contato .info h1{
+    font-size: 3.5rem;
+    font-family: robotoBold;
+}
+
+.contato .info .title-square{
+    height: 8px;
+    width: 50px;
+    margin: 30px auto;
+    background-color: white;
+}
+
+.contato .info p{
+    text-align: left;
+    font-size: 1.5rem;
+    font-family: robotoRegular;
+}
+
+.contato .form{
+    padding-left: 5%;
+}
+
+.contato .form p{
+    color: #959598;
+    font-family: robotoRegular;
+    margin: 10px 0 0 0;
+}
+
+.contato .form input{
+    height: 30px;
+}
+
+.contato .form input,
+.contato .form textarea{
+    width: 90%;
+    padding: 0 5px;
+    font-family: robotoRegular;
+    border-radius: 3px;
+}
+
+.contato .form textarea{
+    resize: none;
+    padding-top: 5px !important;
+}
+
+.contato .form button{
+    margin-top: 20px;
+    width: 100px;
+    border-radius: 3px;
+    font-family: robotoBold;
+    background-color: white;
+    /color: #959598;
+    color: black;
+    border-color: white;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.contato .form button:hover{
+    background-color: var(--secondary-color) !important;
+    color: white !important;
+}
+
+.contato .form button:focus{
+    outline: 0;
+}
+
+.maps{
+    padding: 0 !Important;
+    margin: 0 !important;
+    height: 300px;
+}
+
+.maps iframe{
+    width: 100%;
+    height: 100%;
+}
+
+footer{
+    padding: 0 !important;
+    margin: 0 !important;
+    display: flex;
+    justify-content: center;
+    /align-items: center;
+    color: white;
+    background-image: url(Images/Footer/fundo.png);
+    background-size: cover;
+    background-position: center;
+    background-color: var(--secondary-color);
+    height: 400px;
+    padding-top: 50px !important;
+    font-family: robotoRegular;
+}
+
+footer div{
+    /background-color: darkblue;
+}
+
+footer .logo{
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+footer .info{
+    /background-color: yellow;
+    padding: 0 2.5%;
+}
+
+footer .info a:first-child{
+    font-family: robotoBold;
+    font-size: 1.7rem;
+}
+
+footer .info a{
+    color: white;
+    display: flex;
+    /background-color: aqua;
+    width: 200px;
+    font-size: 1.6rem;
+}
+
+footer .info .social{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    /background-color: purple;
+}
+
+footer .info .social a{
+    width: 40px;
+    margin-right: 10px;
+}
+
+footer .info .social a img{
+    cursor: pointer;
+}
+
+footer .endereco h4{
+    font-size: 1.7rem;
+    font-family: robotoBold;
+}
+
+footer .endereco{
+    font-size: 1.5rem !important;
+}
+
+footer .copyright{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 999px){
+    header nav{
+        /padding: 0 125px 0 100px;
+        padding: 0 !important;
+        justify-content: space-between;
+        padding: 0 60px !important;
+    }
+
+    header nav .nav-list{
+        position: absolute;
+        top: 150px;
+        right: 0;
+        width: 300px;
+        height: 30vh;
+        padding: 0 !Important;
+        /background: #23232e;
+        /background: aqua;
+        background-image: url(Images/Navbar/fundo.png);
+        background-color: var(--secondary-color);
+        background-size: cover;
+        z-index: 100;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+    }
+
+    header nav .logo{
+
+        background-color: green;
+        width: 200px;
+    }
+    header nav .logo img{
+    }
+
+    header nav .nav-list li{
+        margin-left: 0;
+        opacity: 0;
+    }
+
+    header nav .nav-list li a{
+        font-size: 2rem;
+    }
+
+    header nav .mobile-menu{
+        display: block;
+    }
+
+    header nav .mobile-menu .line1,
+    header nav .mobile-menu .line2,
+    header nav .mobile-menu .line3
+    {
+        background-color: white;
+    }
+
+    header nav .mobile-menu.active .line1{
+        transform: rotate(-45deg) translate(-8px, 8px);
+    }
+
+    header nav .mobile-menu.active .line2{
+        opacity: 0;
+    }
+
+    header nav .mobile-menu.active .line3{
+        transform: rotate(45deg) translate(-5px, -7px);
+    }
+
+    header nav .nav-list.active{
+        transform: translateX(0);
+    }
+
+    @keyframes navLinkFade{
+        from{
+            opacity: 0;
+            transform: translateX(50px);
+        }
+        to{
+            opacity: 1;
+            transform: translateX(0px);
+        }
+    }
+
+    header .social{
+        display: none !important;
+    }
+}
+
+@media only screen and (max-width: 575px)
+{
+
+    header{
+        height: 120px !important;
+    }
+
+    header nav{
+        padding: 0 20px !important
+    }
+
+    header nav .nav-list{
+        top: 120px !important;
+    }
+
+    .carousel-top{
+        height: 250px;
+    }
+
+    .carousel-top .carousel-inner .carousel-item p{
+        margin: 0 0px 60px 0 !important;
+        padding: 0 0px 0 0 !important;
+        width: 100%;
+        text-align: center;
+        /background-color: blue;
+        font-size: 2rem;
+    }
+
+    .carousel-top .carousel-indicators{
+        /background-color: purple;
+        margin-bottom: 10px !important;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .carousel-top .carousel-indicators li{
+        left: 0%;
+    }
+
+    .informacao{
+        height: 120px;
+    }
+
+    .informacao h2{
+        font-size: 3rem;
+    }
+
+    .materiais .info{
+        padding-top: 20px !important;
+    }
+
+    .materiais .info h1{
+        font-size: 2rem;
+    }
+
+    .materiais .info p{
+        padding: 5px 10px !important;
+        font-family: goudyOldStyleBold;
+        font-size: 1.2rem;
+    }
+
+    /*materiais*/
+    .materiais .gallery-swiper {
+        width: 60%;
+        margin: 0 20% !important;
+        height: 400px;
+    }
+
+    .materiais .gallery-swiper .swiper-slide 
+    {
+        width: 100% !important;
+        height: 300px !important;
+        /*-webkit-box-reflect: below 0px linear-gradient(transparent, transparent, #0002);*/
+    }
+
+    .materiais .gallery-swiper .swiper-slide img 
+    {
+        /*display: block;*/
+        width: 100%;
+        max-width: 220px;
+        height: 100%;/*
+        transition: 1s;
+        cursor: pointer;
+        object-fit: cover;
+        object-position: center !important;*/
+    }
+
+    .materiais .gallery-swiper .swiper-slide p{/*
+        transition: 1s;*/
+        font-size: 1.5rem;
+        transform: translateY(85px);
+        height: 60px;/*
+        position: absolute;
+        color: black;
+        bottom: 0;*/
+        background-color: red;/*
+        width: 70% !important;
+        text-align: center;
+        font-family: goudyOldStyleBold;
+        text-transform: uppercase;
+        transition: 1s;*/
+    }
+
+    /*.materiais .gallery-swiper .swiper-slide:hover p{
+    opacity: 1;
+    transform: translateY(-20px);
+}*/
+
+    /*.materiais .gallery-swiper .swiper-slide-active{
+    transition: 1s;
+    padding: 0 0% !important;
+    /margin-top: 70px !important;
+    /transform: translateY(70px);
+    /animation: activeMove 0s;
+    /animation-fill-mode: forwards;
+}*/
+
+    @keyframes activeMove {
+        0%   {top: 0px;}
+        100% {top: 0px;}
+    }
+
+    .materiais .gallery-swiper .swiper-slide-active p{
+        font-size: 2rem;
+        width: 100% !important;
+        max-width: 220px;
+    }
+
+    .materiais .gallery-swiper .swiper-slide:hover img{
+        transform: scale(1.1);
+    }
+
+    @keyframes prevNextMove {
+        0%   {top: 0px;}
+        100% {top: 0px;}
+    }
+
+
+
+    .carousel-bottom{
+        margin-bottom: 30px;
+    }
+
+    .carousel-bottom .item{
+        margin: 0 !important;
+        padding: 0 !important;
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .carousel-bottom .item img{
+        height: 100%;
+        object-fit: cover !Important;
+    }
+
+    .carousel-bottom .item p{
+        font-size: 3rem;
+        width: 100%;
+        text-align: center;
+        -webkit-text-stroke-width: 1.5px;
+    }
+
+    .empresa{
+        padding: 0 0 30px 0;
+    }
+
+    /*.empresa .fundo{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}*/
+
+    .empresa .imagens{
+        margin-left: 0%;
+    }
+
+    .empresa .imagens div{
+        max-width: 350px;
+        width: 90%;
+        margin: 10px auto !important;
+    }
+
+    .empresa .imagens .grande img{
+        height: 300px;
+    }
+
+    .empresa .imagens .pequenas img{
+        height: 80px;
+    }
+
+    .empresa .info h1{
+        font-size: 2rem;
+        margin-bottom: 30px;
+    }
+
+    .empresa .info p{
+        font-size: 1.2rem;
+    }
+
+    .contato{
+        padding: 20px 0; !important;
+        height: auto;
+    }
+
+    .contato .info{
+        text-align: center;
+        color: white;
+    }
+
+    .contato .info h1{
+        font-size: 2.8rem;
+        text-align: left
+    }
+
+    .contato .info .title-square{
+        margin: 15px auto;
+    }
+
+    .contato .info p{
+        text-align: left;
+        font-size: 1.2rem;
+    }
+
+    .contato .form{
+        padding-left: 5%;
+    }
+
+    .contato .form input,
+    .contato .form textarea{
+        width: 100%;
+    }
+
+    .maps{
+        height: 250px;
+    }
+
+    footer{
+        height: auto;
+        padding-top: 20px !important;
+    }
+
+    footer div{
+        /background-color: darkblue;
+    }
+
+    footer .logo{
+        padding-top: 0px;
+    }
+
+    footer .logo img{
+        width: 100%;
+        max-width: 150px;
+    }
+
+    footer .info{
+        /background-color: yellow;
+        padding: 20px 2.5%;
+    }
+
+    footer .info a:first-child{
+        font-family: robotoBold;
+        font-size: 1.7rem;
+    }
+
+    footer .info a{
+        display: flex;
+        /background-color: aqua;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    footer .info .social{
+        align-items: center;
+        justify-content: center;
+        /background-color: purple;
+    }
+
+    footer .info .social a{
+        width: 40px;
+        margin-right: 10px;
+    }
+
+    footer .info .social a img{
+        cursor: pointer;
+    }
+
+    footer .endereco{
+        font-size: 1.5rem !important;
+        text-align: center;
+    }
+
+    footer .copyright{
+        margin-top: 20px;
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px)
+{
+    .carousel-top{
+        height: 350px;
+    }
+
+    .informacao{
+        height: 150px;
+    }
+
+    .informacao h2{
+        font-size: 4.8rem;
+    }
+
+    .materiais .info{
+        padding-top: 20px !important;
+    }
+
+    .materiais .gallery-swiper {
+        width: 90%;
+        margin: 0 auto !important;
+        height: 380px;/*
+        padding-top: 0px !important;
+        background-color: blue;*/
+    }
+
+    .materiais .gallery-swiper .swiper-slide 
+    {
+        width: 33% !important;
+        height: 220px !important;
+    }
+
+    .materiais .gallery-swiper .swiper-slide-active{
+        padding: 0 1% !important;
+        height: 240px !important;
+    }
+
+    @keyframes activeMove {
+        0%   {top: 0px;}
+        100% {top: 20px;}
+    }
+
+    .materiais .gallery-swiper .swiper-slide-prev,
+    .materiais .gallery-swiper .swiper-slide-next
+    {
+        padding: 0 4% !important;
+    }
+
+    @keyframes prevNextMove {
+        0%   {top: 0px;}
+        100% {top: 0px;}
+    }
+
+    .carousel-bottom{
+        margin-bottom: 30px;
+    }
+
+    .carousel-bottom .item p{
+        font-size: 6rem;
+        text-align: center;
+        -webkit-text-stroke-width: 3px;
+    }
+
+    .empresa{
+        padding: 0 0 30px 0;
+    }
+
+    .empresa .imagens{
+        margin-left: 0%;
+    }
+
+    .empresa .imagens div{
+        max-width: 400px;
+        width: 90%;
+        margin: 10px auto !important;
+    }
+
+    .empresa .imagens .grande img{
+        height: 350px;
+    }
+
+    .empresa .imagens .pequenas img{
+        height: 100px;
+    }
+
+    .empresa .info{
+        padding: 0 10%;
+    }
+
+    .empresa .info h1{
+        font-size: 3.5rem;
+        margin-bottom: 30px;
+    }
+
+    .empresa .info p{
+        font-size: 1.4rem;
+    }
+
+    .contato .info p{
+        text-align: center;
+        font-size: 1.4rem;
+    }
+
+    .contato .form input,
+    .contato .form textarea{
+        width: 100%;
+    }
+
+    footer{
+        height: auto;
+        padding-top: 20px !important;
+    }
+
+    footer div{
+        /background-color: darkblue;
+    }
+
+    footer .logo{
+        padding-top: 0px;
+    }
+
+    footer .logo img{
+        width: 100%;
+        max-width: 150px;
+    }
+
+    footer .info{
+        /background-color: yellow;
+        padding: 20px 2.5%;
+    }
+
+    footer .info a:first-child{
+        font-family: robotoBold;
+        font-size: 1.7rem;
+    }
+
+    footer .info a{
+        display: flex;
+        /background-color: aqua;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    footer .info .social{
+        align-items: center;
+        justify-content: center;
+        /background-color: purple;
+    }
+
+    footer .info .social a{
+        width: 40px;
+        margin-right: 10px;
+    }
+
+    footer .info .social a img{
+        cursor: pointer;
+    }
+
+    footer .endereco{
+        font-size: 1.5rem !important;
+        text-align: center;
+    }
+
+    footer .copyright{
+        margin-top: 20px;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 767px)
+{
+    .empresa{
+        flex-direction: column-reverse;
+    }
+
+    .empresa div{
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 999px)
+{
+    .carousel-top{
+        height: 400px;
+    }
+
+    .informacao h2{
+        font-size: 5.5rem;
+    }
+
+    .materiais .info{
+        padding-top: 30px !important;
+    }
+
+    /*materiais*/
+    .materiais .gallery-swiper {
+        height: 400px;
+    }
+
+    .materiais .gallery-swiper .swiper-slide 
+    {
+        height: 200px !important;
+        padding: 0 2.2% !important;
+    }
+
+    .materiais .gallery-swiper .swiper-slide p{
+        font-size: 1.2rem;
+        width: 70% !important;
+    }
+
+    .materiais .gallery-swiper .swiper-slide-active{
+        padding: 0 0% !important;
+        height: 250px !important;
+    }
+
+    @keyframes activeMove {
+        0%   {top: 0px;}
+        100% {top: 30px;}
+    }
+
+    .materiais .gallery-swiper .swiper-slide-active p{
+        font-size: 1.7rem;
+        width: 100% !important;
+    }
+    .materiais .gallery-swiper .swiper-slide-prev
+    {
+        padding: 0 3% 0 0 !important;
+    }
+
+    .materiais .gallery-swiper .swiper-slide-next
+    {
+        padding: 0 0% 0 3% !important;
+    }
+
+    .materiais .gallery-swiper .swiper-slide-prev,
+    .materiais .gallery-swiper .swiper-slide-next{
+        height: 225px !important;
+    }
+
+    @keyframes prevNextMove {
+        0%   {top: 0px;}
+        100% {top: 15px;}
+    }
+
+    .materiais .gallery-swiper .swiper-slide-next p,
+    .materiais .gallery-swiper .swiper-slide-prev p{
+        font-size: 1.4rem;
+        width: 85% !important;
+    }
+
+    .carousel-bottom{
+        margin-bottom: 40px;
+    }
+
+    .carousel-bottom .item p{
+        font-size: 8rem;
+    }
+
+    .empresa{
+        padding: 0 0 40px 0;
+    }
+
+    .empresa .imagens{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .empresa .imagens div{
+        width: 100%;
+        margin: 10px auto !important;
+        max-width: 350px;
+    }
+
+    .empresa .imagens .grande img{
+        height: 400px;
+    }
+
+    .empresa .imagens .pequenas{
+        margin-top: 20px;
+    }
+    
+    .empresa .info{
+        padding: 0 1% 0 2%;
+    }
+
+    .empresa .info h1{
+        font-size: 2.7rem;
+        margin-bottom: 30px;
+    }
+
+    .empresa .info p{
+        font-size: 1.3rem;
+        text-align: justify;
+    }
+
+    .contato .form input,
+    .contato .form textarea{
+        width: 100%;
+    }
+
+    footer .logo{
+        padding: 10px 5px 0 5px !important;
+    }
+    
+    footer .logo img{
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 451px) and (max-width: 575px)
+{
+
+}
+
+
