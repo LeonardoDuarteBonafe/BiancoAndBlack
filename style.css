@@ -1,10 +1,10 @@
 @font-face{
-    src: url(Fonts/Goudy Old Style Bold.ttf);
+    src: url(Fonts/Goudy-Old-Style-Bold.ttf);
     font-family: goudyOldStyleBold;
 }
 
 @font-face{
-    src: url(Fonts/Amalfi Coast.ttf);
+    src: url(Fonts/Amalfi-Coast.ttf);
     font-family: amalfiCoast;
 }
 
@@ -66,8 +66,8 @@ header nav .logo{
 }
 
 header nav .logo img{
-    max-width: 200px !important;
-    padding: 15px 0;
+    max-width: 150px !important;
+    padding: 30px 0;
     /background-color: green;
 }
 
@@ -146,10 +146,11 @@ header nav .mobile-menu div{
     object-fit: cover;
     object-position: center;
     transition: 1s;
+    transform: scale(1.2);
 }
 
 .carousel-top .carousel-inner .carousel-item.active img{
-    transform: scale(1.2);
+    transform: scale(1);
 }
 
 .carousel-top .carousel-inner .carousel-item p{
@@ -216,7 +217,7 @@ header nav .mobile-menu div{
     justify-content: center;
     align-items: center;
     height: 100%;
-    font-size: 6rem;
+    font-size: 4rem;
 }
 
 /*.title{
@@ -689,8 +690,7 @@ footer .copyright{
     }
 
     header nav .logo{
-
-        background-color: green;
+        /background-color: green;
         width: 200px;
     }
     header nav .logo img{
@@ -792,7 +792,8 @@ footer .copyright{
     }
 
     .informacao h2{
-        font-size: 3rem;
+        font-size: 2.2rem;
+        padding: 5px 10px;
     }
 
     .materiais .info{
@@ -1060,7 +1061,8 @@ footer .copyright{
     }
 
     .informacao h2{
-        font-size: 4.8rem;
+        font-size: 2.8rem;
+        padding: 10px;
     }
 
     .materiais .info{
@@ -1237,7 +1239,7 @@ footer .copyright{
     }
 
     .informacao h2{
-        font-size: 5.5rem;
+        font-size: 3.7rem;
     }
 
     .materiais .info{
